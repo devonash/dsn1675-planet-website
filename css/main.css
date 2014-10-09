@@ -39,7 +39,7 @@ img {
 
 .intro {
     background-color: #e2e2e2;
-    overflow: hidden;
+    /*overflow: hidden;*/
     text-align: center;
 }
 
@@ -47,7 +47,6 @@ img {
     margin: 0;
     padding: 0;
     list-style-type: none;
-    padding-bottom: 1em;
 }
 
 .nav-bar {
@@ -59,7 +58,19 @@ img {
     color: #0074D9;
 }
 
-@media only screen and (min-width: 30em) {
+.light {
+    background-color: #efefef;
+}
+
+.medium {
+    background-color: #e2e2e2;
+}
+
+.dark {
+    background-color: #cccccc;
+}
+
+@media only screen and (min-width: 25em) {
     
     .nav {
         text-align: center;
@@ -67,13 +78,11 @@ img {
     
     .nav li {
         display:inline-block;
-        padding-top: 1.5em;
-        
     }
     
 }
 
-@media only screen and (min-width: 80em) {
+@media only screen and (min-width: 38em) {
     
     .nav {
         float: left;
@@ -88,3 +97,4 @@ img {
     .nav-bar {
         overflow: hidden;
     }
+}
