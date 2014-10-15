@@ -16,6 +16,30 @@ html {
   text-size-adjust: 100%;
 }
 
+@media only screen and (min-width: 60em) {
+    
+    html {
+        font-size: 110%;
+    }
+    
+}
+
+@media only screen and (min-width: 90em) {
+
+    html {
+        font-size: 120%;
+    }
+    
+}
+
+@media only screen and (min-width: 120em) {
+    
+    html {
+        font-size: 130%
+    }
+    
+}
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -70,6 +94,10 @@ img {
     background-color: #cccccc;
 }
 
+.hidden {
+    display: none;
+}
+
 @media only screen and (min-width: 25em) {
     
     .nav {
@@ -78,6 +106,14 @@ img {
     
     .nav li {
         display:inline-block;
+    }
+    
+      .copyright {
+        text-align: center;
+    }
+    
+    .hidden {
+        display: inline;
     }
     
 }
@@ -97,4 +133,35 @@ img {
     .nav-bar {
         overflow: hidden;
     }
+    
+    .copyright {
+        text-align: left;
+    }
+    
+    .nav-footer {
+        float: right;
+    }
+    
+    .bigp {
+        padding-right: 1.5em;
+    }
+    
+}
+
+@media only screen and (min-width: 60em) {
+    
+    .nav-footer {
+        float: right;
+    }
+    
+    .datalist dt {
+        width: 12em;
+        float: left;
+    }
+    
+    .bigp {
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+    }
+    
 }
